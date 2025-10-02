@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>21-Day Morning Routine + Sleep + HLD/LLD + DSA Checklist</title>
+<style>
+  :root{
+    --bg:#0f172a;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;
+    --border:#1f2937;--accent:#22c55e;--accent2:#60a5fa;--warn:#f59e0b;--danger:#ef4444;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:linear-gradient(180deg,#0b1220,#0f172a)}
+  header{position:sticky;top:0;z-index:3;background:rgba(15,23,42,.75);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:16px}
+  h1{margin:0 0 6px;font-size:1.35rem} .sub{color:var(--muted);font-size:.95rem}
+  .container{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;max-width:1200px;margin:0 auto;padding:16px}
+  @media(max-width:900px){.container{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
+  h2{margin:0 0 8px;font-size:1.2rem} h3{margin:16px 0 8px;font-size:1.05rem;color:#cbd5e1}
+  p,li{line-height:1.55}
+  .hr{border-top:1px solid var(--border);margin:12px 0}
+  .tag{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--border);color:var(--muted);font-size:.8rem}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  input[type="date"],select{background:#0b1324;border:1px solid var(--border);color:var(--text);padding:6px 8px;border-radius:8px}
+  button{background:#0b1324;color:var(--text);border:1px solid var(--border);padding:8px 10px;border-radius:8px;cursor:pointer}
+  button:hover{border-color:var(--accent2)}
+  .small{font-size:.9rem}.muted{color:var(--muted)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .pill{background:#0b1324;border:1px solid var(--border);padding:6px 8px;border-radius:999px}
+  .success{color:var(--accent)} .warn{color:var(--warn)} .danger{color:var(--danger)}
+  .checklist h3{margin-top:6px}
+  .day{border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:10px;background:#0c1323}
+  .todo{display:grid;gap:6px;margin-top:8px}
+  label.item{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;cursor:pointer}
+  input[type="checkbox"]{transform:translateY(3px)}
+  .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:6px}
+  .metrics input{width:100%;background:#0b1324;border:1px solid var(--border);color:var(--text);padding:6px 8px;border-radius:8px}
+  .header-line{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}
+  .streak{font-weight:700} .calendar-range{font-weight:600;color:#a7f3d0}
+  details{border:1px solid var(--border);border-radius:8px;padding:10px 12px;background:#0b1324}
+  summary{cursor:pointer;color:var(--accent2)}
+  .footer{text-align:center;color:var(--muted);padding:16px;font-size:.9rem}
+  .nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
+  .progress{height:10px;background:#0b1324;border:1px solid var(--border);border-radius:999px;overflow:hidden}
+  .bar{height:100%;background:linear-gradient(90deg,#60a5fa,#22c55e)}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>21-Day Morning Routine + Sleep + HLD/LLD + DSA Checklist</h1>
+  <div class="sub">Left: guidance. Right: date-driven daily checklist with navigation and streak (stored locally).</div>
+</header>
+
+<div class="container">
+  <!-- LEFT: EXPLANATIONS -->
+  <section class="card">
+    <div class="header-line">
+      <h2>Overview</h2>
+      <div class="row">
+        <span class="pill">Goal: become morning person</span>
+        <span class="pill">Daily walk: 1 hour</span>
+        <span class="pill">Diet: gluten-free + no added sugar</span>
+        <span class="pill">Study: HLD + LLD + DSA (checklist only)</span>
+      </div>
+    </div>
+    <div class="hr"></div>
+
+    <h3>Morning-Person Blueprint</h3>
+    <ol>
+      <li>Fixed wake time daily (weekends ±30–60 min).</li>
+      <li>Sunlight 10–15 min within 60 min of waking.</li>
+      <li>5–10 min light mobility; main 1-hour walk later.</li>
+      <li>No caffeine after 2 PM; finish dinner 2–3 hours before bed.</li>
+      <li>Evening wind-down 60 min: dim lights, warm shower, light stretch/breathing, plan tomorrow.</li>
+    </ol>
+
+    <div class="hr"></div>
+    <h3>Sleep Instructions (Use Nightly)</h3>
+    <ol>
+      <li>Keep your bedroom cool, dark, quiet. Bed = sleep only.</li>
+      <li>Wind-down steps:
+        <ul>
+          <li>Dim lights + stop screens</li>
+          <li>Warm shower</li>
+          <li>Breathing: 4-7-8 (4s in, 7s hold, 8s out x4)</li>
+          <li>Write tomorrow’s top 3 tasks</li>
+        </ul>
+      </li>
+      <li>If you can’t sleep in ~20 min, get up, low light, boring task, return when sleepy.</li>
+      <li>Optional: magnesium glycinate 200–300 mg 1–2 h before bed if appropriate for you.</li>
+    </ol>
+
+    <div class="hr"></div>
+    <h3>HLD and LLD Focus (Checklist Only)</h3>
+    <p>Each day, just check:
+      <span class="tag">LLD 30–45 min</span>,
+      <span class="tag">HLD 30–45 min</span>,
+      <span class="tag">DSA 30–60 min</span>.
+      No patterns or topic text is shown here.</p>
+
+    <div class="hr"></div>
+    <details>
+      <summary>Diet notes: gluten/sugar traps</summary>
+      <ul class="small">
+        <li>Hidden gluten: soy sauce (use tamari), breaded coatings, malt/barley.</li>
+        <li>Hidden sugar names: syrup, dextrose, fructose, corn syrup, maltose.</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- RIGHT: CHECKLISTS -->
+  <aside class="card checklist">
+    <div class="header-line">
+      <h2>21-Day Calendar & Checklists</h2>
+      <div class="streak">Streak: <span id="streak">0</span> / 21</div>
+    </div>
+
+    <div class="row" style="margin:8px 0 12px">
+      <label class="row">Start Date:
+        <input id="start-date" type="date"/>
+      </label>
+      <button id="apply-date">Apply</button>
+      <button id="export">Export</button>
+      <button id="import">Import</button>
+      <input id="import-input" type="file" accept="application/json" style="display:none"/>
+    </div>
+
+    <div class="nav">
+      <button id="prev-day">Prev</button>
+      <button id="today">Today</button>
+      <button id="next-day">Next</button>
+      <span>Range: <span class="calendar-range" id="range-label"></span></span>
+    </div>
+
+    <div class="progress" title="Overall completion">
+      <div id="progress-bar" class="bar" style="width:0%"></div>
+    </div>
+
+    <div class="hr"></div>
+
+    <div id="days"></div>
+  </aside>
+</div>
+
+<div class="footer">
+  Tip: Complete required items to maintain your streak. Export to save, import to restore.
+</div>
+
+<script>
+/* Storage keys */
+const LS_KEY = 'morning_sleep_hld_lld_dsa_plan_v2';
+const DEFAULT_START = '2025-10-03'; // yyyy-mm-dd
+
+/* State */
+let state = {
+  startDate: DEFAULT_START,
+  checks: {},            // { key: boolean }
+  metrics: {},           // { key: value }
+  streak: 0,
+  focusDay: 1            // which day is expanded/visible first in view
+};
+
+/* Utils */
+const el = sel => document.querySelector(sel);
+function fmtDate(d){ return d.toISOString().slice(0,10); } // yyyy-mm-dd
+function parseDate(str){ const [y,m,d]=str.split('-').map(Number); return new Date(y,m-1,d); }
+function addDays(d, n){ const x=new Date(d); x.setDate(x.getDate()+n); return x; }
+function rangeLabel(start){
+  const s = parseDate(start);
+  const e = addDays(s, 20);
+  const opts = { month:'short', day:'2-digit', year:'numeric' };
+  return s.toLocaleDateString(undefined, opts) + ' → ' + e.toLocaleDateString(undefined, opts);
+}
+
+/* Load/Save */
+function load(){
+  const saved = JSON.parse(localStorage.getItem(LS_KEY) || '{}');
+  state = Object.assign({ startDate: DEFAULT_START, checks:{}, metrics:{}, streak:0, focusDay:1 }, saved);
+}
+function save(){
+  localStorage.setItem(LS_KEY, JSON.stringify(state));
+}
+
+/* Daily template (no DSA patterns text, only checklist items) */
+function dayTemplate(i, dateStr){
+  const baseKey = `d${i}`;
+  // Required for streak: morning, walk, gf, nosugar, dsa, lld, hld, sleep
+  const fields = [
+    {key:`${baseKey}-morning`, label:'Morning routine (sunlight 10–15m + 500ml water)'},
+    {key:`${baseKey}-walk`, label:'Walk 1 hour (can split 30+30)'},
+    {key:`${baseKey}-gf`, label:'Gluten-free all day'},
+    {key:`${baseKey}-nosugar`, label:'No added sugar all day'},
+    {key:`${baseKey}-if`, label:'Breakfast skipped (IF 16:8) — optional'},
+    {key:`${baseKey}-workout`, label:'Training: strength/mobility/interval (see rotation)'},
+    {key:`${baseKey}-study-DSA`, label:'DSA practice 30–60 min'},
+    {key:`${baseKey}-study-LLD`, label:'LLD practice 30–45 min'},
+    {key:`${baseKey}-study-HLD`, label:'HLD practice 30–45 min'},
+    {key:`${baseKey}-sleep`, label:'Nightly wind-down 60m + fixed bedtime'}
+  ];
+  // Workout rotation suggestion
+  const workoutCycle = ['Strength A','Low-impact cardio 30–40m','Strength B','Mobility + core 20–30m','Intervals (1m fast / 1–2m easy ×10)','Strength A','Rest / gentle walk'];
+  const w = workoutCycle[(i-1)%7];
+
+  return `
+  <div class="day" data-day="${i}">
+    <div class="header-line">
+      <h3>Day ${i} — ${dateStr}</h3>
+      <span class="muted small">${w}</span>
+    </div>
+    <div class="todo">
+      ${fields.map(f=>`
+        <label class="item"><input type="checkbox" data-key="${f.key}"/> ${f.label}</label>
+      `).join('')}
+    </div>
+    <div class="metrics">
+      <input type="number" step="0.1" placeholder="Weight (kg)" data-metric="${baseKey}-weight"/>
+      <input type="number" step="0.1" placeholder="Sleep (hrs)" data-metric="${baseKey}-sleephrs"/>
+      <input type="text" placeholder="Notes / meals" data-metric="${baseKey}-notes"/>
+    </div>
+  </div>`;
+}
+
+/* Render days based on start date */
+function render(){
+  const start = parseDate(state.startDate);
+  el('#range-label').textContent = rangeLabel(state.startDate);
+  const container = el('#days');
+  container.innerHTML = '';
+  for(let i=1;i<=21;i++){
+    const d = addDays(start, i-1);
+    const nice = d.toLocaleDateString(undefined,{ weekday:'short', month:'short', day:'2-digit'});
+    container.insertAdjacentHTML('beforeend', dayTemplate(i, nice));
+  }
+  // apply checks
+  document.querySelectorAll('input[type="checkbox"][data-key]').forEach(cb=>{
+    const k = cb.dataset.key;
+    cb.checked = !!state.checks[k];
+    cb.addEventListener('change', ()=>{
+      state.checks[k] = cb.checked;
+      updateStreak();
+      updateProgress();
+      save();
+    });
+  });
+  // apply metrics
+  document.querySelectorAll('[data-metric]').forEach(inp=>{
+    const k = inp.dataset.metric;
+    inp.value = state.metrics[k] ?? '';
+    inp.addEventListener('input', ()=>{
+      state.metrics[k] = inp.value;
+      save();
+    });
+  });
+  // scroll to focus day
+  scrollToDay(state.focusDay);
+  updateStreak();
+  updateProgress();
+}
+
+/* Streak logic: day counts if required items are checked */
+function dayComplete(i){
+  const req = ['morning','walk','gf','nosugar','study-DSA','study-LLD','study-HLD','sleep'];
+  const base = `d${i}-`;
+  return req.every(s => !!state.checks[base + s]);
+}
+function updateStreak(){
+  let s = 0;
+  for(let i=1;i<=21;i++){
+    if(dayComplete(i)) s++;
+    else break;
+  }
+  state.streak = s;
+  el('#streak').textContent = s.toString();
+}
+
+/* Overall completion progress */
+function updateProgress(){
+  const totalChecksPerDay = 10; // fields length
+  let checked = 0;
+  let total = totalChecksPerDay * 21;
+  for(let i=1;i<=21;i++){
+    const base = `d${i}-`;
+    const keys = ['morning','walk','gf','nosugar','if','workout','study-DSA','study-LLD','study-HLD','sleep'];
+    keys.forEach(k=>{ if(state.checks[base+k]) checked++; });
+  }
+  const pct = Math.round((checked/total)*100);
+  el('#progress-bar').style.width = pct + '%';
+}
+
+/* Date picker handling */
+function initDatePicker(){
+  const input = el('#start-date');
+  input.value = state.startDate || DEFAULT_START;
+  el('#apply-date').addEventListener('click', ()=>{
+    const v = input.value || DEFAULT_START;
+    state.startDate = v;
+    // Adjust focusDay to keep today in view if within range
+    state.focusDay = dayIndexForDate(new Date()) || 1;
+    save();
+    render();
+  });
+}
+
+/* Navigation */
+function dayIndexForDate(t){
+  const s = parseDate(state.startDate);
+  const diff = Math.floor((t - s)/(1000*60*60*24)) + 1;
+  if(diff>=1 && diff<=21) return diff;
+  return null;
+}
+function scrollToDay(i){
+  i = Math.min(21, Math.max(1, i||1));
+  state.focusDay = i;
+  const target = document.querySelector(`.day[data-day="${i}"]`);
+  if(target){ target.scrollIntoView({behavior:'smooth', block:'start'}); }
+}
+function initNav(){
+  el('#prev-day').addEventListener('click', ()=>{
+    state.focusDay = Math.max(1, state.focusDay - 1);
+    scrollToDay(state.focusDay);
+    save();
+  });
+  el('#next-day').addEventListener('click', ()=>{
+    state.focusDay = Math.min(21, state.focusDay + 1);
+    scrollToDay(state.focusDay);
+    save();
+  });
+  el('#today').addEventListener('click', ()=>{
+    const idx = dayIndexForDate(new Date());
+    if(idx){ state.focusDay = idx; }
+    else { state.focusDay = 1; }
+    scrollToDay(state.focusDay);
+    save();
+  });
+}
+
+/* Export/Import */
+function initEI(){
+  const btnE = el('#export');
+  const btnI = el('#import');
+  const fileI = el('#import-input');
+  btnE.addEventListener('click', ()=>{
+    const blob = new Blob([JSON.stringify(state,null,2)], {type:'application/json'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = '21-day-progress.json';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+  btnI.addEventListener('click', ()=> fileI.click());
+  fileI.addEventListener('change', async e=>{
+    const f = e.target.files[0]; if(!f) return;
+    try{
+      const text = await f.text();
+      const obj = JSON.parse(text);
+      if(!obj || typeof obj !== 'object') throw new Error();
+      state = Object.assign({ startDate: DEFAULT_START, checks:{}, metrics:{}, streak:0, focusDay:1 }, obj);
+      save(); render();
+      alert('Progress imported.');
+    }catch{
+      alert('Invalid file.');
+    }finally{
+      fileI.value = '';
+    }
+  });
+}
+
+/* Init */
+(function(){
+  load();
+  if(!state.startDate){ state.startDate = DEFAULT_START; }
+  initDatePicker();
+  initEI();
+  initNav();
+  render();
+})();
+</script>
+</body>
+</html>
